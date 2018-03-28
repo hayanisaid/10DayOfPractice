@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cnavas-of-Menue</title>
+</head>
+
+<body>
+<style>
+.sidnav{
+	height: 100%;
+    width:250px;
+    position: fixed;
+    z-index: 1;
+    display: none;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    transition: transform .5s ;
+	
+	}
+	.sidnav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.isActive
+{
+    transform: translateX(250px);
+    transition: transform .5s ease-in-out;
+}
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;}
+	.sidnav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+	}
+	#main {
+    transition: transform .5s;
+    padding: 16px;}
+
+
+</style>
+<div id="mysidnav" class="sidnav">
+
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+
+
+
+</div>
+
+<div id="main">
+this is main of the template
+ <h2>Sidenav Push Example</h2>
+  <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
+  <span style="font-size:30px;cursor:pointer;"  onclick="openNav()">&#9776; open</span>
+</div>
+
+
+
+<script>
+
+function openNav(){
+	
+	document.getElementById("mysidnav").style.display="block";
+	document.getElementById("main").classList.toggle("isActive");
+
+	}
+	
+	function closeNav(){
+	document.getElementById("mysidnav").style.display="none";
+	document.getElementById("main").classList.toggle("isActive");
+		
+		
+		
+		}
+
+
+
+
+</script>
+
+
+</body>
+</html>
