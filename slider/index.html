@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Accordion</title>
+	<title>Image slider</title>
 </head>
-<link rel="stylesheet" type="text/css" href="css/app.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<!-- include materialize icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <body>
-
+  <div class="container">
+  	<div class="slider">
+  		<img src="images/image1.jpg" class="fade" alt="slider image" id="sliderItem">
+  		<div class="controls">
+  			<a href="#" class="prev" onclick="prev()"><i class="material-icons">navigate_before</i></a>
+  			<a href="#" class="next"  onclick="next()"><i class="material-icons">navigate_next</i></a>
+  		</div>
+  	</div>
+  </div>
 <!-- js files -->
 <script type="text/javascript" src="js/app.js"></script>
 </body>

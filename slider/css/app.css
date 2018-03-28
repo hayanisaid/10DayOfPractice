@@ -1,0 +1,59 @@
+
+
+body{
+	background: #0E3047;
+	padding: 0;
+	margin: 0;
+}
+
+.container{
+	margin-right: 1em;
+	margin-left: 1em;
+}
+.container .slider{
+	 max-width: 40em;
+    margin: 4em auto;
+    max-height: 19em;
+    overflow: hidden;
+}
+.container .slider img{
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	transition: 3s ease-in-out;
+}
+.fade{
+animation: fadeIn 1s linear;
+transition: 3s ease-in-out;
+	
+}
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0.5;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.slider .controls{
+	position: absolute;
+	bottom: 29em;
+
+}
+.slider .controls a{
+	color: #fff;
+	position: absolute;
+	
+}
+.slider .controls .prev{
+    left: -5em;
+}
+.slider .controls .next{
+ right: -45em;
+}
+.slider .controls a i{
+    font-size: 4em;
+}
