@@ -1,12 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
+
 <head>
-	<title>Accordion</title>
+  <meta charset="UTF-8">
+  <title> Calculator</title>
+  
+       <!-- include css files -->
+		<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+
+		<link rel="stylesheet" href="css/app.css">
+
+  
 </head>
-<link rel="stylesheet" type="text/css" href="css/app.css">
+
 <body>
 
-<!-- js files -->
-<script type="text/javascript" src="js/app.js"></script>
+  <div class="calculator-wrapper text-center">
+  <div class="container">
+    
+  <div class="calculator">
+    <div id="output" class="text-center">0</div>
+    <div class="btns">
+      <a class="row">
+        <div class="col-md-10">
+          <button class="btn btn-danger" id="C">AC</button>
+           <button class="btn btn-danger" id="CE">CE</button>
+           <button class="btn " id="power">*2</button><br>
+          <button class="btn num" id="7">7</button>
+           <button class="btn num" id="8">8</button>
+           <button class="btn num" id="9">9</button><br>
+           <button class="btn num" id="4">4</button>
+           <button class="btn num" id="5">5</button>
+           <button class="btn num" id="6">6</button><br>
+          <button class="btn num" id="1">1</button>
+           <button class="btn num" id="2">2</button>
+           <button class="btn num" id="3">3</button><br>
+          <button class="btn num" id=".">.</button>
+           <button class="btn num" id="0">0</button>
+           <button class="btn btn-primary" id="=">=</button><br>
+        </div>
+         <div class="col-md-2 side_right">
+           <button class="btn" id="/">/</button>
+           <button class="btn" id="*">*</button>
+           <button class="btn" id="-">-</button>
+           <button class="btn plus" id="+">+</button>
+         </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+	<!-- include js files -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+	<script  src="js/app.js"></script>
+
 </body>
+
 </html>
